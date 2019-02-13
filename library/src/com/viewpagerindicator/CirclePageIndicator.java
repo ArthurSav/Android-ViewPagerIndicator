@@ -415,7 +415,7 @@ public class CirclePageIndicator extends View implements PageIndicator {
         invalidate();
     }
 
-    private int getCount() {
+    protected int getCount() {
         if (mIsInEditMode) {
             return EDIT_MODE_COUNT;
         } else if (mViewPager != null) {
